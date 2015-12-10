@@ -1,0 +1,2 @@
+# splamR
+Spatial Landscape Modelling
