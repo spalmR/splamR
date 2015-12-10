@@ -1,0 +1,37 @@
+splam <- function(){
+  
+message("Welcome to Spatial Landscape Modelling (SPLAM)")
+message("Dependencies: raster, rgdal, sp, xlsx, igraph")
+message("Execute Spatial Landscape Analysis Parameters:")
+           message("Disturbance Index Map")
+message("1. fragmentation(), 2. patchiness(), 3. porosity(), 4. interspersion(), 5. juxtaposition(), 6. humandisturbance()")
+           message("Weight= Analytic Hierarchy Process(AHP)")
+message("Disturbance Index Map= 1 * Weight1 + 2 * Weight2 + 3 * Weight3 + 4 * Weight4 + 5 * Weight5 + 6 * Weight6")
+message("1. disturbanceindex(), 2. terraincomplexity(), 3. ecosystem_uniqueness(), 4. species_richness(), 5. biodiversityvalue()")
+message("Biological Richness Map = 1 * Weight1 + 2 * Weight2 + 3 * Weight3 + 4 * Weight4 + 5 * Weight5")
+
+}
+
+Package: splamR
+Title: Spatial Landscape Modelling
+Version: 0.1.0
+Authors@R: Hariom Singh
+Description: splamR is an open source R library to support spatial landscape modelling. 
+It computes three thematic maps viz Forest Fragmentation, Disturbance Index, Biological Richness which are significant information sources for making effective decisions for biodiversity conservation and planning. 
+As an input, the software supports for loading data sets from a number of sources, including CSV, XLS, XLSX, open source databases, vector, and raster datasets. 
+As an output, write the output as original resolution and projection and visualize the datasets using various 2D plots.
+
+               Execute Spatial Landscape Analysis Parameters: Disturbance Index Map
+
+1. fragmentation(), 2. patchiness(), 3. porosity(), 4. interspersion(), 5. juxtaposition(), 6. humandisturbance()
+Weight= Analytic Hierarchy Process(AHP) with sensitivity analysis
+           
+Disturbance Index Map= 1 * Weight1 + 2 * Weight2 + 3 * Weight3 + 4 * Weight4 + 5 * Weight5 + 6 * Weight6
+
+1. disturbanceindex(), 2. terraincomplexity(), 3. ecosystem_uniqueness(), 4. species_richness(), 5. biodiversityvalue()
+
+Biological Richness Map = 1 * Weight1 + 2 * Weight2 + 3 * Weight3 + 4 * Weight4 + 5 * Weight5
+Depends: R (>= 3.2.1)
+Dependencies: raster, rgdal, xlsx, sp, igraph
+License: GNU General Public License, Version 1
+LazyData: true
